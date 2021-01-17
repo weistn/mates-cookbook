@@ -6,7 +6,7 @@ It provdes specialized markdown commands to write recipes in a simple humanreada
 
 ## Compile the example
 
-To use the cookbook, you must install [MaTeS][https://github.com/weistn/mates].
+To use the cookbook, you must install [MaTeS](https://github.com/weistn/mates).
 Make sure that the `mates` binary is in your path.
 
 Enter the `example` directory.

@@ -1,0 +1,66 @@
+.register-title {
+    background: rgba(0,0,0,0.6);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)), url('https://themes.gohugo.io//theme/hugo-sodium-theme/images/covers/misc.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    color: #ffffff;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    margin: auto;
+    text-align: center;
+    height: 280px;
+    padding-top:80px;
+}
+
+.register-title h1 {
+    font-size: 2.5em;
+}
+
+.register-title div {
+    font-size: 1.2em;
+    color: #f8f9fa;
+    opacity: .6;
+}
+
+.register .card {
+    background-color: #ededdd;
+}
+
+.register a {
+    color: black;
+    text-decoration: none !important;
+}
+
+.register a:hover {
+    color: #0b0080;
+}
+
+.register a:focus {
+    outline: none;
+    text-decoration: none !important;
+}
+
+.register .card {
+    background-color: #ededdd;
+    width: 18em;
+}
+
+.register .col {
+    flex-grow: 0 !important;
+}
+
+@media only screen and (min-width: 800px) {
+    .register-title h1 {
+        font-size: 5em;
+    }
+    
+    .register-title div {
+        font-size: 2.5em;
+    }
+
+    .register-title {
+        height: 300px;
+    }    
+}
+

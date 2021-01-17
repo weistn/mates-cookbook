@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="homepage-title">
+    <h1>{{.Site.Title}}</h1>
+    {{ with .Params.Subtitle }}
+    <div class="subtitle">{{.}}</div>
+    {{ end }}
+</div>
+<div class="homepage-content">
+    {{ .Content }}
+    <div class="container"> 
+        <div class="row">
+            <div class="col m-1">
+                <div class="card" style="height:100%; min-width: 10em;">
+                    <h4 class="card-header">Kapitel</h4>
+                    <div class="card-body">
+                        {{ range (.Site.Tags.Type "Chapter").Folder.Pages }}
+                            <h5><a href="{{ .RelURL }}">{{ .Title }}</a></h5>
+                        {{ end }}
+                    </div>
+                </div>                
+            </div>
+            <div class="col m-1">
+                <div class="card" style="height:100%; min-width: 10em;">
+                        <h4 class="card-header">Sammlungen</h4>
+                        <div class="card-body">
+                            {{ range (sortBy "Title" .Site.Tags.Types) }}
+                                {{ if and (ne .Name "Chapter") (gt (len .Values) 0) -}}
+                                <h5><a href="{{ .Folder.RelURL }}">{{ .Folder.Title }}</a></h5>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>                                       
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col">
+                <h5 class="recipe-count">Das Kochbuch umfasst {{ len (.Site.PagesByType "recipe") }} Rezepte</h5>
+                <p class="copyright">(c) 2021 Claudia und Torben Weis</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+{{ define "title" }}
+    {{ .Site.Title }}
+{{ end }}

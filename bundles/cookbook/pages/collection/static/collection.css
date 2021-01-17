@@ -1,0 +1,60 @@
+.category-title {
+    background: rgba(0,0,0,0.6);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)), url('https://themes.gohugo.io//theme/hugo-sodium-theme/images/covers/misc.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    color: #ffffff;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    margin: auto;
+    text-align: center;
+    height: 260px;
+    padding-top:80px;
+}
+
+.category-title h1 {
+    font-size: 2.5em;
+}
+
+.category-title div {
+    font-size: 1.2em;
+    color: #f8f9fa;
+    opacity: .6;
+}
+
+.category h1 {
+    font-size: 1.4em;
+}
+
+.category a {
+    color: black;
+    text-decoration: none !important;
+}
+
+.category a:hover {
+    color: #0b0080;
+}
+
+.category a:focus {
+    text-decoration: none !important;
+    outline: none;
+}
+
+.category .card {
+    background-color: #ededdd;
+}
+
+@media only screen and (min-width: 800px) {
+    .category-title h1 {
+        font-size: 5em;
+    }
+    
+    .category-title div {
+        font-size: 2.5em;
+    }
+
+    .category-title {
+        height: 400px;
+    }    
+}

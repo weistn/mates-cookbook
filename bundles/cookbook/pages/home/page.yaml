@@ -1,0 +1,5 @@
+Inherit: base
+Styles:
+  - home.css
+Resources:
+  - img/title.jpg

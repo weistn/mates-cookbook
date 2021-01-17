@@ -1,0 +1,4 @@
+{{ define "main" }}
+    {{ .Content }}
+    {{ range .Folder.Pages }} {{.Title}} {{ end }}
+{{ end }}

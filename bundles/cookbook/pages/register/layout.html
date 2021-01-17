@@ -10,16 +10,14 @@
         <div class="row justify-content-start">
             {{ $site := .Site -}}
             {{ $recipes := $site.PagesByType "recipe"}}
-            {{- range (map (field "Title") $recipes | map (prefix 1) | uniq | sort ) -}}
+            {{- range (map &(prefix 1 .Title) $recipes | uniq | sort ) -}}
                 {{- $letter := . }}
                 <div class="col m-1">
                     <div class="card" style="height:100%">
                         <h4 class="card-header">{{ $letter }}:</h4>
                         <div class="card-body">                                                            
-                        {{ range (sortBy "Title" $recipes) -}}
-                            {{- if hasPrefix $letter (.Title) }}
-                                <div><a href="{{.RelURL}}">{{.Title}}</a></div>                                                            
-                            {{ end -}}
+                        {{ range (filter &(hasPrefix $letter .Title) $recipes | sortBy "Title") -}}
+                            <div><a href="{{.RelURL}}">{{.Title}}</a></div>                                                            
                         {{- end -}}
                         </div>
                     </div>

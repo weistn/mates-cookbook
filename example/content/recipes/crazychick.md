@@ -17,6 +17,8 @@ A personal comment about the dish. Do not try this.
 | 1       | Rote Paprika |
 | 1 Prise | Pfeffer      |
 
-+ Huhn kochen
-+ Paprika braten
-+ Pfeffern und servieren
+1. Huhn kochen
+  1. Umrühren
+  1. Sieden
+1. Paprika braten
+1. Pfeffern und servieren

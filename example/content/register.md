@@ -1,4 +1,2 @@
----
 Type: register
 Title: Register
----

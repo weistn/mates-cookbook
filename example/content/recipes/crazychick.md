@@ -1,8 +1,6 @@
----
 Title: Crazy Chicken
 Chapter: Chicken
 BestOf: true
----
 
 # Crazy Chicken
 
@@ -22,3 +20,11 @@ A personal comment about the dish. Do not try this.
   1. Sieden
 1. Paprika braten
 1. Pfeffern und servieren
+
+Sautieren:
+So ein koch krams
+
+Garnieren:
+Deko Krams
+
+Und so weiter bla bla

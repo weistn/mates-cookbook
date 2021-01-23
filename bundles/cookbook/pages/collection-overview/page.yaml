@@ -1,1 +1,3 @@
 Inherit: base
+Styles:
+  - collection.css

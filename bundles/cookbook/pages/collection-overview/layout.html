@@ -1,4 +1,24 @@
 {{ define "main" }}
+    <div class="category-title">
+        <h1>{{.Title}}</h1>
+        <div>Eine Rezeptsammlung</div>
+    </div>
     {{ .Content }}
-    {{ range .Folder.Pages }} {{.Title}} {{ end }}
+    <div class="category container">
+        <div class="row">
+            {{ range .TagType.Values.true.Pages }}             
+                <div class="col-12 m-1">
+                    <a href="{{.RelURL}}">
+                        <div class="card" style="height:100%">
+                            <div class="card-body">                                    
+                                <h1>{{.Title}}</h1>
+    
+                                    <p>TODO: Summary</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>                            
+            {{ end }}
+        </div>
+    </div>
 {{ end }}
